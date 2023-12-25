@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
 </head>
@@ -10,7 +10,7 @@
     <a-scene arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
         <a-entity gps-camera rotation-reader></a-entity>
         <a-entity id="planets" position="0 0 -16"  ></a-entity>
-        <a-box position="0 0 -4" rotation="0 45 0" color="#4CC3D9" onclick="changePlanet()"></a-box>    
+        <a-box position="0 0 -4" rotation="0 45 0" color="#4CC3D9" onmousedown="changePlanet()" ontouchstart="changePlanet()"></a-box>
         <a-assets>
             <a-asset-item id="planet1-model" src="planet1.glb"></a-asset-item>
             <a-asset-item id="planet2-model" src="planet2.glb"></a-asset-item>
