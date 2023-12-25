@@ -7,7 +7,7 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-    <a-scene arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+    <a-scene arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
         <a-entity gps-camera rotation-reader></a-entity>
         <a-entity id="planets" position="0 0 -16"  ></a-entity>
         <a-box position="0 0 -4" rotation="0 45 0" color="#4CC3D9" onclick="changePlanet()"></a-box>    
